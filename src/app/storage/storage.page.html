@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>storage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>El texto guardado en base de datos es: {{ textoAlmacenado }}</p>
+  <input type="text" [(ngModel)]="textoAlmacenado">
+  <button type="button" (click)="guardarDato()">Guardar</button>
+</ion-content>

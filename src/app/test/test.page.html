@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>test</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>Texto almacenado: {{ textoAlmacenado }}</p>
+
+  <ion-item>
+    <ion-label position="floating">Ingrese un texto</ion-label>
+    <ion-input [(ngModel)]="textoAlmacenado"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="guardarTexto()">
+    Guardar
+  </ion-button>
+</ion-content>
